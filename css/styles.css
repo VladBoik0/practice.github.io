@@ -100,7 +100,9 @@ a{  cursor: pointer;
     display: none;
 }
 
-
+.logo-box{
+    position: relative;
+}
 
 .mail-icon {
     margin-top: -5px;
