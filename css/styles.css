@@ -102,6 +102,7 @@ a{  cursor: pointer;
 
 .logo-box{
     position: relative;
+    left: -20px;
 }
 
 .mail-icon {
