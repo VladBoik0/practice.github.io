@@ -1609,25 +1609,25 @@ margin-left:15px ;
 }
 
 
-#contact-us .input-container{
+#sing-up-free .input-container{
     margin-bottom: 0;
     margin-top: 0;
 }
 
-#contact-us .send-button{
+#sing-up-free .send-button{
     width: 300px;
     margin: 10px 20px;
 
 }
 
-#contact-us .send-button:nth-child(odd) {
+#sing-up-free .send-button:nth-child(odd) {
     margin-right: 5.9%;
 }
 
-#contact-us .form{
+#sing-up-free .form{
     margin-top: 30px;}
 
-#contact-us {
+#sing-up-free {
     color: #ffffff;
     position: fixed;
     top: 0;
@@ -1639,10 +1639,10 @@ margin-left:15px ;
 }
 
 @media (min-width: 600px) {
-    #contact-us .send-button{
+    #sing-up-free .send-button{
    
         width: 43%;
     }
-    #contact-us .form{
+    #sing-up-free .form{
         margin-top: 100px;
 }}

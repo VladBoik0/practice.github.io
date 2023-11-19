@@ -9,7 +9,7 @@ menuIcons.addEventListener('click', ()=> {
 
 // Modal window
 
-let modal = document.getElementById('contact-us')
+let modal = document.getElementById('sing-up-free')
 document.querySelectorAll('.openModal').forEach(element => {
     element.addEventListener('click', () => {
         if(modal.classList.contains('hide')) {
