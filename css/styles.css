@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
 a{  cursor: pointer;
     text-decoration: none;
     color: #000;
@@ -67,10 +72,13 @@ a{  cursor: pointer;
 
 .line {
     margin: 0 auto;
-    height: 3px;
+    height: 4px;
     background-color: #4BA87D;
-    width: 80px;
+    width: 90px;
+
 }
+
+
 
 .sing-up {
     position: absolute;
@@ -116,7 +124,7 @@ a{  cursor: pointer;
 .main-logo {
     margin-left: 70px;
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 900;
@@ -518,13 +526,13 @@ a{  cursor: pointer;
     height: 110px;
 }
 
-/* Оновлені стилі для логотипів */
+
 
 .logo-single {
     text-align: center;
 }
 
-/* Додайте стилі, щоб логотипи вибігали за межі батьківського контейнера */
+
 .logos {
     display: flex;
     flex-wrap: wrap;
@@ -658,7 +666,7 @@ footer {
 
 /* media queries */
 @media (min-width: 480px) and (max-width: 769px) {
-    /*=============================*/
+    
     .section1 {
         margin-top: 92px;
         position: relative;
@@ -687,7 +695,7 @@ footer {
     .content-wrap {
         padding: 0 12px;
     }
-    /*=============================*/
+    
     .video {
         height: 302px;
     }
@@ -700,7 +708,7 @@ footer {
         font-size: 10px;
         line-height: 21px;
     }
-    /*=============================*/
+
     .img3 {
     position: relative;
     width: 100%;
@@ -725,12 +733,24 @@ footer {
     .container{
         height: auto;
     }
-    /*=============================*/
+
     .footer-links ul{
-        margin: 0 auto;
+        margin-left:30%;
         width: 380px;
         height: 150.28px; 
     }
+
+    @media (min-width: 600px){
+        .footer-links ul{
+            margin-left:45%;
+        }
+    }
+    @media (min-width: 700px){
+        .footer-links ul{
+            margin-left:50%;
+        }
+    }
+
     .footer-links li {
         width: 80px;
         height: 15px;
@@ -786,7 +806,7 @@ footer {
 }
 
 @media (min-width: 769px)  and (max-width: 1024px){
-     /*=============================*/
+
      .img2 {
         top: -20px;
         width: 472.064px;
@@ -814,7 +834,7 @@ footer {
     .content-wrap {
         padding: 0 6%;
     }
-    /*=============================*/
+ 
     .video {
         margin-top: 200px;
         height:510px; 
@@ -828,7 +848,7 @@ footer {
         font-size: 10px;
         line-height: 21px;
     }
-    /*=============================*/
+   
     .img3 {
         position: relative;
         width: 100%;
@@ -854,10 +874,10 @@ footer {
         position: absolute;
         float: none;
     }
-    /*=============================*/
+   
     .container4{
     display: flex;
-    justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+    justify-content: space-between; 
     flex-wrap: wrap;
     }
     .block2{
@@ -897,16 +917,16 @@ footer {
         margin: 0 auto;
         width: 500px;
         display: flex;
-        justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+        justify-content: space-between;
         flex-wrap: wrap;
     }
-    /*=============================*/
+  
     .txt6{
         margin: 0 auto;
     }
     .brands{
             display: flex;
-            justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+            justify-content: space-between;
             flex-wrap: wrap;
             width: 600px;
             margin: 0 auto;
@@ -917,7 +937,7 @@ footer {
     .logos{
         gap: 30px;
         display: flex;
-        justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+        justify-content: space-between;
         flex-wrap: wrap;
         width: auto;
         margin: 0 auto;
@@ -929,7 +949,7 @@ footer {
     }
     .footer-links ul{
         margin-top: 50px;
-        margin-left: 270px;
+        margin-left: 45%;
         width: 420px;
         height: 150.28px; 
     }
@@ -950,7 +970,7 @@ footer {
 }
 
 @media (min-width: 1026px) and (max-width: 1200px) {
-/*=============================*/
+
 
 .img2 {
     top: -40px;
@@ -993,7 +1013,8 @@ margin-left: 288px;
 width: 200px;
 height: 65px; 
 }
-/*=============================*/
+
+
 .video {
    font-size: 60px; 
    margin-top: 200px;
@@ -1009,7 +1030,8 @@ height: 65px;
    font-size: 21px; 
    line-height: 21px;
 }
-/*=============================*/
+
+
 .img3 {
     position: relative;
     width: 100%;
@@ -1046,11 +1068,11 @@ font-size: 17px;
 
 
 
-/*=============================*/
+
 .container4{
 margin-top: 110px;
 display: flex;
-justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+justify-content: space-between;
 flex-wrap: wrap;
 }
 .block2{
@@ -1098,10 +1120,10 @@ font-size: 60px;
    margin-top: 40px;
    width: 500px;
    display: flex;
-   justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+   justify-content: space-between;
    flex-wrap: wrap;
 }
-/*=============================*/
+
 .txt6{
    margin: 0 auto;
    font-size: 44px; 
@@ -1109,7 +1131,7 @@ font-size: 60px;
 }
 .brands{
        display: flex;
-       justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+       justify-content: space-between; 
        flex-wrap: wrap;
        width: 600px;
        margin: 0 auto;
@@ -1130,7 +1152,7 @@ margin-top: 140px;
 .logos{
    gap: 30px;
    display: flex;
-   justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+   justify-content: space-between; 
    flex-wrap: wrap;
    width: auto;
    margin: 0 auto;
@@ -1142,7 +1164,7 @@ margin-top: 140px;
 }
 .footer-links ul{
    margin-top: 50px;
-   margin-left: 35%;
+   margin-left: 22%;
    width: 800px;
    height: 200px; 
 }
@@ -1153,7 +1175,7 @@ margin-top: 140px;
 }
 .link2{
    width: 202px;
-   margin-left: 70%;
+   margin-left: 50%;
    margin-top: -50px;
 
 }
@@ -1164,11 +1186,11 @@ footer{
 }
 
 @media (min-width: 1200px) {
-    /*=============================*/
+
 
     .img2 {
         top: -40px;
-       margin-left: 40%;
+       margin-left: 550px;
        max-width: 1400px;
        width: 600px;
        height: 400px;
@@ -1207,7 +1229,7 @@ footer{
     width: 200px;
     height: 65px; 
    }
-   /*=============================*/
+
    .video {
        font-size: 60px; 
        margin-top: 200px;
@@ -1224,7 +1246,7 @@ footer{
        font-size: 21px; 
        line-height: 21px;
    }
-   /*=============================*/
+
    .img3 {
     position: relative;
     width: 100%;
@@ -1241,7 +1263,7 @@ footer{
 
    }
    .right{
-       margin-left: 27%;
+       margin-left: 390px;
        margin-top: -350px;
        position: absolute;
        float: none;
@@ -1258,7 +1280,7 @@ footer{
     width: 324px;
     height: 324px;
 
-       margin-left: 54%;
+       margin-left: 780px;
        margin-top: -260px;
        position: absolute;
        float: none;
@@ -1289,11 +1311,11 @@ footer{
     margin-left: -17px;
     font-size: 16px; 
    }
-   /*=============================*/
+ 
    .container4{
     margin-top: 580px;
    display: flex;
-   justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+   justify-content: space-between;
    flex-wrap: wrap;
    }
    .block2{
@@ -1341,10 +1363,10 @@ footer{
        margin-top: 40px;
        width: 500px;
        display: flex;
-       justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+       justify-content: space-between;
        flex-wrap: wrap;
    }
-   /*=============================*/
+  
    .txt6{
        margin: 0 auto;
        font-size: 44px; 
@@ -1352,7 +1374,7 @@ footer{
    }
    .brands{
            display: flex;
-           justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+           justify-content: space-between;
            flex-wrap: wrap;
            width: 600px;
            margin: 0 auto;
@@ -1373,7 +1395,7 @@ footer{
    .logos{
        gap: 30px;
        display: flex;
-       justify-content: space-between; /* Рівномірний розподіл простору між блоками */
+       justify-content: space-between;
        flex-wrap: wrap;
        width: auto;
        margin: 0 auto;
@@ -1405,3 +1427,222 @@ footer{
    
    }
 }
+
+
+/* page 2 */
+
+.pricing {
+    background-color: #f5f5f5; 
+    padding: 80px 0;
+}
+
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+
+.column {
+    flex: 1;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.popular {
+    background-color: #CAEAC7; 
+    color: #000000; 
+}
+
+
+.price {
+    font-size: 24px;
+    color: #4BA87D; 
+}
+
+.plan-description {
+    color: #555;
+    margin-top: 20px;
+}
+
+.pricing-ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-ul li {
+    margin: 10px 0;
+}
+
+
+
+.btn-pricing {
+    display: block;
+    width: 100%;
+    text-align: center; 
+    padding: 10px 0; 
+    font-weight: 600;
+    background-color: #4BA87D;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 0;
+    margin: 10px 0;
+}
+
+.btn-pricing:hover {
+    background-color: #61c194; 
+}
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      
+      font-size: 18px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;}
+        
+/* page 3 */
+
+.form{
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.contact-usTxt{
+ margin: 0 auto;
+margin-top:100px;
+text-align: center;
+width: 300px;
+
+}
+
+.input-container,.input-container-message {
+    margin: 20px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    resize: none;
+}
+
+
+.send-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4BA87D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 900px) {
+    
+    
+    .input-container {
+        display: inline-block;
+        width: 43%;
+        
+    }
+    .input-container:nth-child(odd) {
+        margin-right: 5.9%;
+    }
+}
+
+/* page 4 */
+.form .privacy-head,.form .privacy-txt{
+    text-align: center;
+}
+
+.privacy-head{
+    margin: 30px 0;
+    margin-top: 50px;
+}
+
+.privacy-txt{
+    margin: 20px 0;
+}
+
+.privacy-list{
+margin-left:15px ;
+
+}
+
+.privacy-list li {
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    .form .privacy-head,.form .privacy-txt{
+        text-align: left;
+    }
+}
+
+
+#contact-us .input-container{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#contact-us .send-button{
+    width: 300px;
+    margin: 10px 20px;
+
+}
+
+#contact-us .send-button:nth-child(odd) {
+    margin-right: 5.9%;
+}
+
+#contact-us .form{
+    margin-top: 30px;}
+
+#contact-us {
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    #contact-us .send-button{
+   
+        width: 43%;
+    }
+    #contact-us .form{
+        margin-top: 100px;
+}}
