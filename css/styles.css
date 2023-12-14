@@ -150,6 +150,7 @@ a{  cursor: pointer;
     top: 50px;
     filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.16));
     z-index: -1;
+    right: 20px;
 }
 
 .title1 {
@@ -222,6 +223,10 @@ a{  cursor: pointer;
     position: relative;
     width: 100%;
     height: 100%;
+    background-image: url("../image/img3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .video {
@@ -283,9 +288,9 @@ a{  cursor: pointer;
     height: 294px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .photo1 {
@@ -408,9 +413,11 @@ a{  cursor: pointer;
     height: 100%;
     background: linear-gradient(0deg, #000 -32.5%, rgba(84, 84, 84, 0.00) 67.78%);
     opacity: 0.7;
+    z-index: 0;
 }
 
 .inf {
+    position: absolute;
     z-index: 5;
     margin-top: 100px;
     margin-left: 15px;
@@ -471,6 +478,7 @@ a{  cursor: pointer;
     border-radius: 5px;
     border: 1px solid #9F9F9F;
     background: #FFF;
+    padding-left: 16px;
 }
 
 .thank {
@@ -511,7 +519,6 @@ a{  cursor: pointer;
 .brands {
     margin: auto;
     width: 281px;
-    height: 242px;
 }
 
 .txt6 {
@@ -539,6 +546,7 @@ a{  cursor: pointer;
     justify-content: center;
     gap: 30px;
     overflow: hidden;
+    align-items: center;
 }
 
 .logo {
@@ -594,18 +602,6 @@ footer {
     height: 486px;
 }
 
-.footer-links ul {
-    width: 250px;
-    height: 214.28px;
-}
-
-.footer-links li {
-    width: 80px;
-    height: 15px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
 .divider {
     margin: 0 auto;
     max-width: 1400px;
@@ -614,7 +610,6 @@ footer {
 }
 
 .link {
-    margin-top: 5px;
     color: #000;
     
     font-family: Raleway;
@@ -625,9 +620,6 @@ footer {
 }
 
 .text7 {
-    margin-top: 40px;
-    width: 186px;
-    height: 53px;
     color: #000;
     font-family: Raleway;
     font-size: 9px;
@@ -645,11 +637,6 @@ footer {
     line-height: 11px;
 }
 
-.link2 {
-    flex-direction: column;
-    gap: 9px;
-    float: right;
-}
 
 .nija-logo {
     display: inline-flex;
@@ -685,7 +672,6 @@ footer {
         width: 340.064px;
         height: 230px;
         top: auto;
-        left: 0;
         margin-left: 40%;
         position: absolute;
     }
@@ -710,7 +696,6 @@ footer {
     position: relative;
     width: 100%;
     height:80%;
-    padding: 0 9%;
     }  
     .block1{
         margin-left: 19%;
@@ -731,33 +716,7 @@ footer {
         height: auto;
     }
 
-    .footer-links ul{
-        margin-left:30%;
-        width: 380px;
-        height: 150.28px; 
-    }
 
-    @media (min-width: 600px){
-        .footer-links ul{
-            margin-left:45%;
-        }
-    }
-    @media (min-width: 700px){
-        .footer-links ul{
-            margin-left:50%;
-        }
-    }
-
-    .footer-links li {
-        width: 80px;
-        height: 15px;
-    }
-    .link2{
-        margin-right: 30px;
-     margin-top: -50px;
-     right: 0;
-
-    }
     footer{
         height: 380px;
     
@@ -809,7 +768,7 @@ footer {
         top: -20px;
         width: 472.064px;
         height: 314.895px;
-        right: 20px;
+        right: 40px;
     }
      .section1 {
         margin-top: 92px;
@@ -851,7 +810,6 @@ footer {
         position: relative;
         width: 100%;
         height:80%;
-        padding: 0 9%;
     }  
 
     .container{
@@ -928,39 +886,22 @@ footer {
             flex-wrap: wrap;
             width: 600px;
             margin: 0 auto;
-            height: auto;
 
     }
 
     .logos{
         gap: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         width: auto;
         margin: 0 auto;
-        height: 30px;
         }
     .nija-logo{
         position: absolute;
         right: 75%;
     }
-    .footer-links ul{
-        margin-top: 50px;
-        margin-left: 45%;
-        width: 420px;
-        height: 150.28px; 
-    }
-    .footer-links li {
-        width: 80px;
-        height: 15px;
-    }
-    .link2{
-        margin-right: 10px;
-   margin-top: -50px;
-   right: 0;
-
-    }
+    
     footer{
         height: 380px;
     
@@ -976,6 +917,7 @@ footer {
    max-width: 1400px;
    width: 600px;
    height: 400px;
+   right: 180px;
 }
 .section1 {
    margin-top: 92px;
@@ -1034,7 +976,6 @@ height: 65px;
     position: relative;
     width: 100%;
     height:80%;
-    padding: 0 9%;
 }  
 
 .container{
@@ -1130,7 +1071,7 @@ font-size: 60px;
        display: flex;
        justify-content: space-between; 
        flex-wrap: wrap;
-       width: 600px;
+       width: 100%;
        margin: 0 auto;
        height: auto;
 
@@ -1149,32 +1090,16 @@ margin-top: 140px;
 .logos{
    gap: 30px;
    display: flex;
-   justify-content: space-between; 
+   justify-content: center; 
    flex-wrap: wrap;
    width: auto;
    margin: 0 auto;
-   height: 30px;
    }
 .nija-logo{
    position: absolute;
    right: 75%;
 }
-.footer-links ul{
-   margin-top: 50px;
-   margin-left: 22%;
-   width: 800px;
-   height: 200px; 
-}
-.footer-links li {
-   width: 150px;
-   height: 30px;
-   font-size: 19px; 
-}
-.link2{
-   margin-right: 10px;
-   margin-top: -50px;
-   right: 0;
-}
+
 footer{
    height: 380px;
 
@@ -1190,6 +1115,7 @@ footer{
        max-width: 1400px;
        width: 600px;
        height: 400px;
+       right: 180px;
    }
     .section1 {
        margin-top: 92px;
@@ -1247,7 +1173,6 @@ footer{
     position: relative;
     width: 100%;
     height: 80%;
-    padding: 0 9%;
 }  
    .block1{
     width: 320px;
@@ -1371,9 +1296,10 @@ footer{
            display: flex;
            justify-content: space-between;
            flex-wrap: wrap;
-           width: 600px;
+           width: 100%;
            margin: 0 auto;
            height: auto;
+           flex-direction: column;
 
    }
    .frankie{
@@ -1390,33 +1316,16 @@ footer{
    .logos{
        gap: 30px;
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
        flex-wrap: wrap;
        width: auto;
        margin: 0 auto;
-       height: 30px;
-       }
+    }
    .nija-logo{
        position: absolute;
        right: 75%;
    }
-   .footer-links ul{
-       margin-top: 50px;
-       right: 0;
-       width: 800px;
-       height: 200px; 
-   }
-   .footer-links li {
-       width: 150px;
-       height: 30px;
-       font-size: 19px; 
-   }
-   .link2{
-       margin-left: 0;
-       right: auto;
-       margin-top: -50px;
-
-   }
+   
    footer{
        height: 380px;
    
@@ -1436,6 +1345,7 @@ footer{
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around; 
+    
 }
 
 
@@ -1506,6 +1416,7 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-bottom: 20px;
     }
 
     .swiper-slide img {
@@ -1614,6 +1525,10 @@ margin-left:15px ;
     .form .privacy-head,.form .privacy-txt{
         text-align: left;
     }
+
+    .video {
+        padding: 0 9%;
+    }
 }
 
 
@@ -1646,6 +1561,40 @@ margin-left:15px ;
     width: 100%;
 }
 
+.footer-links {
+    height: 214px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link {
+    margin-top: 7px;
+}
+
+footer {
+    padding: 48px 0;
+}
+
+.text7 {
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+.link2 .link-text:first-child {
+    margin-bottom: 9px;
+}
+
+.footer-container {
+    padding-top: 22px;
+}
+
 @media (min-width: 600px) {
     #sing-up-free .send-button{
    
@@ -1653,4 +1602,52 @@ margin-left:15px ;
     }
     #sing-up-free .form{
         margin-top: 100px;
-}}
+    }
+
+    footer .content-wrap {
+        display: flex;
+        justify-content: start;
+        gap: 130px;
+
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 40px;
+        margin: 0;
+    }
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .link2 {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .link2 .link-text:first-child {
+        margin: 0;
+    }
+
+    .text7 {
+        width: auto;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .link, .link2 .link-text, .text7 {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    footer .content-wrap {
+        gap: 200px;
+    }
+}
